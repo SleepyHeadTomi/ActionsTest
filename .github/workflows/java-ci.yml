@@ -13,7 +13,7 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
       - name: Run program
-        run: java -jar target/classes/org/example/Main.jar org.example.Main > output.log
+        run: java -jar target/classes/org/example/Main.jar > output.log
       - name: Upload output log
         uses: actions/upload-artifact@v2
         with:
